@@ -1,0 +1,318 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Bebas Neue", serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: rgba(255, 255, 255, 0.76);
+    font-family: "Bebas Neue", serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background: #323232;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.text_input{
+    padding: .7rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+}
+
+header {
+    background: #3e3e3e;
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+    margin-left: 2em;
+    height: inherit;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: 'Bebas Neue', serif;}
+
+header .logo-text span {
+    color: #1aff00;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    color: darkgray;
+    background: white;
+}
+header ul li ul li a.logout{
+    color:red;
+}
+
+header ul li ul li a:hover{
+    background: #78fb69;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #323232;
+    transition: 0.5s;
+}
+
+header .menu-toggle{
+    display: none;
+}
+
+/* Post SLIDER*/
+.post-slider{
+}
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.post-slider .slider-title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 30px auto;
+}
+
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.post-slider .post-wrapper .post{
+    width: 300px;
+    height: 350px;
+    background: rgba(168, 168, 168, 0.15);
+    display: inline-block;
+    margin:0px 10px;
+}
+
+.post-slider .post-wrapper .post i{
+    font-size: .8em;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+}
+/* CONTENT */
+.content {
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content {
+    width: 70%;
+    float: left;
+}
+
+.content .main-content.single{
+    background: rgba(62, 62, 62, 0.14);
+    padding: 20px 50px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.content .main-content.single{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.content .main-content .recent-post-title {
+    margin: 20px;
+}
+
+.content .main-content .post {
+    width: 95%;
+    height: 270px;
+    margin: 25px auto;
+    border-radius: 5px;
+    background: rgba(168, 168, 168, 0.15);
+    position: relative;
+}
+
+.content .main-content .post .read-more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.content .main-content .post .post-image {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .main-content .post .post-preview {
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+
+.content .sidebar {
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+
+.content .sidebar.single {
+
+}
+
+
+.content .sidebar .section{
+    background: rgba(168, 168, 168, 0.15);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px ;
+}
+.content .sidebar .section.search{
+    margin-top: 83px;
+}
+
+.content .sidebar .section .section-title{
+    margin: 10px 0px 10px 0px;
+}
+
+/* AUTH PAGES*/
+.auth-content{
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(168, 168, 168, 0.15);
+    border-radius: 5px;
+}
+
+.auth-content form div {
+    margin-bottom: 10px;
+}
+
+.auth-content .form-title {
+    text-align: center;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 540px) {
+    header {
+        position: relative;
+    }
+
+    header ul {
+        width: 100%;
+        background: #3e3e3e;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .showing {
+        max-height: 100em;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    header ul li ul {
+        position: static;
+        width: 100%;
+        display: block;
+    }
+
+    header ul li ul li a{
+        padding: 10px;
+        color: white;
+        background: #3e3e3e;
+        padding-left: 50px;
+    }
+    header ul li ul li a.logout{
+        color:red;
+    }
+    header .menu-toggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.5em;
+    }
+
+    header .logo {
+
+        margin-left: 0.5em;
+    }
+
+}
